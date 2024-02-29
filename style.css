@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9cbea7;
+
+}
+.container{
+    padding: 40px  50px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    user-select: none;
+    
+    
+}
+img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -2rem;
+}
+.container .time{
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.container .time span{
+    width: 110px;
+    text-align: center;
+    font-size: 48px;
+    font-size: 700;
+    color: black;
+}
+.time span.colon{
+    width: 10px;
+}
+.btns{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    
+}
+
+.btns button{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #fff;
+}
+.btns .start{
+    background:#10cc00;
+   
+}
+.btns .pause{
+    background: red;
+    
+}
+.btns .reset{
+    background: #0b91f0;
+}
+button:active{
+ transform: scale(0.91);
+}
+
+
+/*media queires*/
+
+@media (max-width:450px){
+    .container{
+        max-width: 300px;
+        margin: 1rem;
+    }
+    .container .time{
+        height: 75px;
+    }
+    .container .time span{
+        width: 40px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .time span.colon{
+        width: 3px;
+    }
+    .btns{
+        gap: 15px;
+    }
+    .btns button{
+        font-size: 14px;
+        padding: 10px 5px;
+        font-weight: 400;
+        gap: 10px;
+       
+    }
+
+}

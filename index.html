@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <img src="watch.png" alt="watch">
+        <div class="time">
+
+            <span class="hour">00</span>
+            <span class="colon">:</span>
+            <span class="minute">00</span>
+            <span class="colon">:</span>
+            <span class="second">00</span>
+            <span class="colon">:</span>
+            <span class="millisecond">00</span>
+        </div>
+        <div class="btns">
+            <button class="start" onclick="startTimer()">Start</button>
+            <button class="pause" onclick="stopTimer()">Pause</button>
+            <button class="reset" onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
